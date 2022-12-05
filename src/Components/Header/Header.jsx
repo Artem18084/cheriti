@@ -6,7 +6,7 @@ import NavList from "./NavList/NavList";
 
 export default function Header() {
   return (
-    <header className=" flex justify-between fixed top-0 right-0  w-full h-auto bg-[#010321] text-white py-4 px-8">
+    <header className=" flex justify-between sticky top-0 right-0  w-full h-auto bg-[#010321] text-white py-4 px-8 text-lg">
      <NavList/>
      <NavLinkOrg/>
     </header>
