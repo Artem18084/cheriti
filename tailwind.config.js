@@ -4,16 +4,16 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: (theme) => ({
-        "mapUK": "url('./images/UKRAINE.svg')",
+           needs: "url('./images/UnderBridge.jpg')",
+        mapUK: "url('./images/UKRAINE.svg')",
+     
       }),
-      boxShadow:{
-        def:" 0px 8px 15px rgba(0, 0, 0, 0.1)",
-        hov:"0px 15px 20px rgba(255,228,181, 0.4)"
-      }
+      boxShadow: {
+        def: " 0px 8px 15px rgba(0, 0, 0, 0.1)",
+        hov: "0px 15px 20px rgba(255,228,181, 0.4)",
+        hovBridge:"0px 15px 20px rgba(156,163,175,0.4)",
+      },
     },
   },
- plugins: [
-    // ...
-    require('tailwind-scrollbar'),
-],
+  plugins: [require("tailwind-scrollbar")],
 };
