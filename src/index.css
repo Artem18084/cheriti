@@ -4,6 +4,7 @@
 @layer base {
   * {
     @apply box-border;
+    @apply outline-none
   }
 }
 html {
