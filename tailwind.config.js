@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: (theme) => ({
-           needs: "url('./images/UnderBridge.jpg')",
+           bridge: "url('./images/UnderBridge.jpg')",
         mapUK: "url('./images/UKRAINE.svg')",
      
       }),

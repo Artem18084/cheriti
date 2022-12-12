@@ -10,7 +10,7 @@ import Donate from "./Components/Routes/Donate";
 function App() {
   
   return (
-    <div className=" flex flex-col  relative w-full h-full ">
+    <div className=" flex flex-col  relative w-full h-full   text-lg max-[1024px]:text-sm">
       <Header  />
       <Routes>
         <Route path="/" element={<Main />} />
