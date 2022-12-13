@@ -8,7 +8,7 @@ export default function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <header className="fixed flex justify-between items-center z-10 top-0 right-0  w-full h-auto bg-[#010321] text-white py-4 px-8">
+    <header className="fixed flex justify-between items-center z-10 top-0 right-0  w-full h-auto bg-[#010321] text-white py-4 px-8 max-[768px]:py-2 max-[768px]:px-4">
       
       <nav className=" max-[768px]:hidden ">
         <NavList />
