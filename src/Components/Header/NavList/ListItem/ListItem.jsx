@@ -1,0 +1,11 @@
+import React from "react";
+
+export default function ListItem(props) {
+  console.log("set",props.setToggleMenu);
+ 
+  return (
+    <li onClick={()=> props.setToggleMenu(false)} className={`hover:text-yellow-600 ${props.state? "text-yellow-600":" text-white"}  `}>
+      <button onClick={()=>props.setState()} id={props.id} >{props.tittle} </button>
+    </li>
+  );
+}
