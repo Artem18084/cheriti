@@ -4,8 +4,12 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: (theme) => ({
-           bridge: "url('./images/UnderBridge.jpg')",
-        mapUK: "url('./images/UKRAINE.svg')",
+           bridgeDesk: "url('./images/UnderBridgeDesk.jpg')",
+           bridgeTablet: "url('./images/UnderBridgeTablet.jpg')",
+           bridgePhone: "url('./images/UnderBridgePhone.jpg')",
+        sunsetDesk: "url('./images/sunsetDesk.svg')",
+        sunsetTablet: "url('./images/sunsetTablet.svg')",
+        sunsetPhone: "url('./images/sunsetPhone.svg')",
      
       }),
       boxShadow: {
