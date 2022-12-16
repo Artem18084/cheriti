@@ -7,7 +7,7 @@ import Main from "./Components/MAin/Main";
 import Reports from "./Components/Routes/Reports/Reports";
 import Needs from "./Components/Routes/Needs/Needs";
 import Team from "./Components/Routes/Team/Team";
-import Donate from "./Components/Routes/Donate";
+import Donate from "./Components/Routes/Donate/Donate";
 import Sidebar from "./Components/Sidebar/Sidebar";
 
 function App() {
