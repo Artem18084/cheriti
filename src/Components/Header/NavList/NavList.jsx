@@ -3,46 +3,8 @@ import ListItem from "./ListItem/ListItem";
 import { Link } from "react-router-dom";
 
 export default function NavList(props) {
-  const [home, setHome] = useState(false);
-  const [report, setReport] = useState(false);
-  const [needs, setNeeds] = useState(false);
-  const [team, setTeam] = useState(false);
-  const [donate, setDonate] = useState(false);
-  const homeActive = () => {
-    setHome(true);
-    setReport(false);
-    setNeeds(false);
-    setTeam(false);
-    setDonate(false);
-  };
-  const reportActive = () => {
-    setHome(false);
-    setReport(true);
-    setNeeds(false);
-    setTeam(false);
-    setDonate(false);
-  };
-  const needsActive = () => {
-    setHome(false);
-    setReport(false);
-    setNeeds(true);
-    setTeam(false);
-    setDonate(false);
-  };
-  const teamActive = () => {
-    setHome(false);
-    setReport(false);
-    setNeeds(false);
-    setTeam(true);
-    setDonate(false);
-  };
-  const donateActive = () => {
-    setHome(false);
-    setReport(false);
-    setNeeds(false);
-    setTeam(false);
-    setDonate(true);
-  };
+
+ 
   const navList = {
     main: "Home",
     report: "Report",
@@ -56,8 +18,8 @@ export default function NavList(props) {
         <ListItem  setToggleMenu ={props.setToggleMenu}
           tittle={navList.main}
           id={navList.main}
-          state={home}
-          setState={homeActive}
+          state={props.home}
+          setState={props.homeActive}
         />
       </Link>
 
@@ -65,8 +27,8 @@ export default function NavList(props) {
         <ListItem setToggleMenu ={props.setToggleMenu}
           tittle={navList.report}
           id={navList.report}
-          state={report}
-          setState={reportActive}
+          state={props.report}
+          setState={props.reportActive}
         />
       </Link>
 
@@ -74,8 +36,8 @@ export default function NavList(props) {
         <ListItem setToggleMenu ={props.setToggleMenu}
           tittle={navList.needs}
           id={navList.needs}
-          state={needs}
-          setState={needsActive}
+          state={props.needs}
+          setState={props.needsActive}
         />
       </Link>
 
@@ -83,16 +45,16 @@ export default function NavList(props) {
         <ListItem setToggleMenu ={props.setToggleMenu}
           tittle={navList.team}
           id={navList.team}
-          state={team}
-          setState={teamActive}
+          state={props.team}
+          setState={props.teamActive}
         />
       </Link>
       <Link to="/Donate">
         <ListItem setToggleMenu ={props.setToggleMenu}
           tittle={navList.donate}
           id={navList.donate}
-          state={donate}
-          setState={donateActive}
+          state={props.donate}
+          setState={props.donateActive}
         />
       </Link>
     </ul>

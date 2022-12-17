@@ -4,8 +4,9 @@ import imgFace from "../../images/footer/facebook.png";
 import imgPay from "../../images/footer/payPal.png";
 import imgWhatsapp from "../../images/footer/whatsapp.png";
 import ContactButton from "../UI/Button/ContactButton";
+import { Link } from "react-router-dom";
 
-export default function Footer() {
+export default function Footer(props) {
   return (
     <footer className=" w-full  flex flex-col  items-center justify-center text-white bg-[#010321] py-10 max-[768px]:py-5 ">
       <hr className="w-[75vw] h-2 mb-16 max-[768px]:mb-4 max-[1024px]:mb-8" />
@@ -16,7 +17,9 @@ export default function Footer() {
           alt="facebook_logo"
           href="https://www.facebook.com/permalink.php?story_fbid=pfbid08BG4LUrwZb2oeocUvsRkK6Q3uGG2GHAkMrgPSvkrQqqBC4Gvj49s93Tr55F4j2gEl&id=102841305701116  "
         />
-        <ContactButton img={imgPay} alt="PayPal_logo" />
+       <Link to={"/Donate"}>
+        <ContactButton img={imgPay} alt="PayPal_logo"  donateActive={props.donateActive}/>
+       </Link>
         <ContactButton img={imgWhatsapp} alt="whatsapp_logo" />
       </section>
 

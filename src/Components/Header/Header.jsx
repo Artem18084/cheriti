@@ -6,12 +6,13 @@ import imgActiveMenu from "../../images/header/activeMenu.png";
 import imgPasiveMenu from "../../images/header/pasiveMenu.png";
 export default function Header(props) {
  
-
+ 
   return (
+    
     <header className="fixed flex justify-between items-center z-10 top-0 right-0  w-full h-auto bg-[#010321] text-white py-4 px-8 max-[768px]:py-2 max-[768px]:px-4">
       
       <nav className=" max-[768px]:hidden ">
-        <NavList  />
+        <NavList donateActive={props.donateActive} teamActive={props.teamActive} needsActive={props.needsActive} reportActive={props.reportActive} homeActive={props.homeActive} donate={props.donate} team={props.team} needs={props.needs} report={props.report} home={props.home}/>
       </nav>
       <NavLinkOrg />
 
