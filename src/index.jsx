@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { render } from "@testing-library/react";
 
 import { BrowserRouter } from "react-router-dom";
 
@@ -13,3 +14,9 @@ root.render(
     <App />
   </BrowserRouter>
 );
+
+// render(
+//   <BrowserRouter>
+//      <App />
+//  </BrowserRouter>, document.getElementById("root")
+// )
