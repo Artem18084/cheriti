@@ -17,7 +17,7 @@ function App() {
   const [needs, setNeeds] = useState(false);
   const [team, setTeam] = useState(false);
   const [donate, setDonate] = useState(false);
-  
+
   const homeActive = () => {
     setHome(true);
     setReport(false);
@@ -53,20 +53,33 @@ function App() {
     setTeam(false);
     setDonate(true);
   };
-  
+
   console.log(toggleMenu);
   return (
     <div className=" flex flex-col  w-full h-full   text-xl  max-[1024px]:text-sm  	  ">
-      <Header toggleMenu={toggleMenu} setToggleMenu={setToggleMenu}  donateActive={donateActive} teamActive={teamActive} needsActive={needsActive} reportActive={reportActive} homeActive={homeActive} donate={donate} team={team} needs={needs} report={report} home={home}/>
+      <Header
+        toggleMenu={toggleMenu}
+        setToggleMenu={setToggleMenu}
+        donateActive={donateActive}
+        teamActive={teamActive}
+        needsActive={needsActive}
+        reportActive={reportActive}
+        homeActive={homeActive}
+        donate={donate}
+        team={team}
+        needs={needs}
+        report={report}
+        home={home}
+      />
       <Routes>
-        <Route path="/" element={<Main  donateActive={donateActive} />} />
+        <Route path="/" element={<Main donateActive={donateActive} />} />
         <Route path="/Reports" element={<Reports />} />
         <Route path="/Needs" element={<Needs />} />
         <Route path="/Team" element={<Team />} />
         <Route path="/Donate" element={<Donate />} />
       </Routes>
-      <Footer  donateActive={donateActive} />
-      <Sidebar setToggleMenu={setToggleMenu} toggleMenu={toggleMenu}/>
+      <Footer donateActive={donateActive} />
+      <Sidebar setToggleMenu={setToggleMenu} toggleMenu={toggleMenu} />
     </div>
   );
 }

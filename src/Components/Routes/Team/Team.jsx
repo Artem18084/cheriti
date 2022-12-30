@@ -2,7 +2,7 @@ import React from "react";
 import PersonCArd from "./PersonCard/PersonCArd";
 import imgArtem from "../../../images/Team/Artem.jpg";
 import imgAmalia from "../../../images/Team/Amalia.jpg";
-import imgAndriy from "../../../images/Team/Andriy.jpg";
+import imgAndrii from "../../../images/Team/Andrii.jpg";
 import imgYana from "../../../images/Team/Yana.JPG";
 import imgVadim from "../../../images/Team/Vadim.jpg";
 import imgJulia from "../../../images/Team/Julia.jpg";
@@ -11,6 +11,7 @@ import imgVika from "../../../images/Team/Vika.jpg";
 import imgAngelina from "../../../images/Team/Angelina.JPG";
 import imgAlyona from "../../../images/Team/Alyona.JPG";
 import imgRuslana from "../../../images/Team/Ruslana.jpg";
+import imgIgor from "../../../images/Team/Igor.jpg";
 
 export default function Team() {
   const team = {
@@ -30,20 +31,21 @@ export default function Team() {
       gmail: "amaliavardanan805@gmail.com",
       telegram: "https://t.me/amaliiavard",
     },
-    "Andriy Yablonskii": {
+    "Andrii Yablonskii": {
       key: 3,
-      name: "Andriy Yablonskii",
-      inst: "",
-      facebook: "",
+      name: "Andrii Yablonskii",
+      inst: "https://instagram.com/yablonskii.a?igshid=MDM4ZDc5MmU=",
+      facebook:
+        "https://www.facebook.com/friends/requests/?profile_id=100046212093353",
       gmail: "",
       telegram: "https://t.me/yablonskii",
     },
     "Yana Kravchenko": {
       key: 4,
       name: "Yana Kravchenko",
-      inst: "",
-      facebook: "",
-      gmail: "",
+      inst: "https://instagram.com/kr_yankaaa",
+      facebook: "https://www.facebook.com/yana.kravchenko.562",
+      gmail: "mailto:ykravchenko94@gmail.com",
       telegram: "https://t.me/kr_yankaaa",
     },
     "Vadim Kravchenko": {
@@ -51,7 +53,7 @@ export default function Team() {
       name: "Vadim Kravchenko",
       inst: "https://instagram.com/vadim_k.r",
       facebook: "https://www.facebook.com/profile.php?id=100009597649534",
-      gmail: "vadimkravchenko179@gmail.com",
+      gmail: "mailto:vadimkravchenko179@gmail.com",
       telegram: "https://t.me/vadim_kravchenk0",
     },
     "Julia Badya": {
@@ -102,13 +104,48 @@ export default function Team() {
       gmail: "",
       telegram: "https://telegram.me/lagnoruslana",
     },
+    "Yevgeniy Ustenko": {
+      key: 12,
+      name: "Yevgeniy Ustenko",
+      inst: "",
+      facebook: "",
+      gmail: "",
+      telegram: "",
+    },
+    "Oleg Rudenko": {
+      key: 13,
+      name: "Oleg Rudenko",
+      inst: "",
+      facebook: "",
+      gmail: "",
+      telegram: "https://t.me/Oleg_r1",
+    },
+    "Igor Cherevichniy": {
+      key: 13,
+      name: "Igor Cherevichniy",
+      inst: "",
+      facebook: "",
+      gmail: "",
+      telegram: "",
+    },
   };
   return (
-    <main className="flex flex-col items-center justify-center py-[8rem] max-[1024px]:py-[6rem]   max-[768px]:py-[4rem]  px-[5vw] w-full h-full bg-[#080a29]">
+    <main className="flex flex-col items-center justify-center py-[8rem] max-[1024px]:py-[6rem]   max-[768px]:py-[4rem]  px-[5vw] w-full h-full bg-[#1b1d33] ">
       <h2 className=" text-4xl max-[1024px]:text-2xl max-[768px]:text-xl text-white">
         Our Team
       </h2>
-      <section className="flex flex-wrap   w-full [&>*]:mr-[5%]  max-[768px]:[&>*]:mr-[3.3333333333333333333333333333333%] [&>*]:mb-[5%] max-[768px]:[&>*]:mb-[3.3333333333333333333333333333333%] pt-[5%] max-[768px]:[&>*]:pt-[3.3333333333333333333333333333333%] pl-[5%] max-[768px]:[&>*]:pl-[3.3333333333333333333333333333333%]">
+      <section className="  flex flex-wrap   w-full [&>*]:mr-[5%]  max-[768px]:[&>*]:mr-[3.3333333333333333333333333333333%] [&>*]:mb-[5%] max-[768px]:[&>*]:mb-[3.3333333333333333333333333333333%] pt-[5%] max-[768px]:[&>*]:pt-[3.3333333333333333333333333333333%] pl-[5%] max-[768px]:[&>*]:pl-[3.3333333333333333333333333333333%]">
+      <PersonCArd
+          src=""
+          alt="Yevgeniy"
+          key={team["Yevgeniy Ustenko"].key}
+          name={team["Yevgeniy Ustenko"].name}
+          instagram={team["Yevgeniy Ustenko"].inst}
+          facebook={team["Yevgeniy Ustenko"].facebook}
+          gmail={team["Yevgeniy Ustenko"].gmail}
+          telegram={team["Yevgeniy Ustenko"].telegram}
+        />
+      
         <PersonCArd
           src={imgYana}
           alt="Yana"
@@ -118,6 +155,17 @@ export default function Team() {
           facebook={team["Yana Kravchenko"].facebook}
           gmail={team["Yana Kravchenko"].gmail}
           telegram={team["Yana Kravchenko"].telegram}
+        />
+
+<PersonCArd
+          src=""
+          alt="Oleg"
+          key={team["Oleg Rudenko"].key}
+          name={team["Oleg Rudenko"].name}
+          instagram={team["Oleg Rudenko"].inst}
+          facebook={team["Oleg Rudenko"].facebook}
+          gmail={team["Oleg Rudenko"].gmail}
+          telegram={team["Oleg Rudenko"].telegram}
         />
 
         <PersonCArd
@@ -152,14 +200,14 @@ export default function Team() {
         />
 
         <PersonCArd
-          src={imgAndriy}
-          alt="Andriy"
-          key={team["Andriy Yablonskii"].key}
-          name={team["Andriy Yablonskii"].name}
-          instagram={team["Andriy Yablonskii"].inst}
-          facebook={team["Andriy Yablonskii"].facebook}
-          gmail={team["Andriy Yablonskii"].gmail}
-          telegram={team["Andriy Yablonskii"].telegram}
+          src={imgAndrii}
+          alt="Andrii"
+          key={team["Andrii Yablonskii"].key}
+          name={team["Andrii Yablonskii"].name}
+          instagram={team["Andrii Yablonskii"].inst}
+          facebook={team["Andrii Yablonskii"].facebook}
+          gmail={team["Andrii Yablonskii"].gmail}
+          telegram={team["Andrii Yablonskii"].telegram}
         />
         <PersonCArd
           src={imgAlyona}
@@ -192,14 +240,14 @@ export default function Team() {
           telegram={team["Julia Badya"].telegram}
         />
         <PersonCArd
-          src={imgIllya}
+          src={imgIgor}
           alt="Iliya"
-          key={team["Iliya Rochev"].key}
-          name={team["Iliya Rochev"].name}
-          instagram={team["Iliya Rochev"].inst}
-          facebook={team["Iliya Rochev"].facebook}
-          gmail={team["Iliya Rochev"].gmail}
-          telegram={team["Iliya Rochev"].telegram}
+          key={team["Igor Cherevichniy"].key}
+          name={team["Igor Cherevichniy"].name}
+          instagram={team["Igor Cherevichniy"].inst}
+          facebook={team["Igor Cherevichniy"].facebook}
+          gmail={team["Igor Cherevichniy"].gmail}
+          telegram={team["Igor Cherevichniy"].telegram}
         />
         <PersonCArd
           src={imgVika}
@@ -221,6 +269,16 @@ export default function Team() {
           facebook={team["Ruslana Lagno"].facebook}
           gmail={team["Ruslana Lagno"].gmail}
           telegram={team["Ruslana Lagno"].telegram}
+        />
+         <PersonCArd
+          src={imgIllya}
+          alt="Iliya"
+          key={team["Iliya Rochev"].key}
+          name={team["Iliya Rochev"].name}
+          instagram={team["Iliya Rochev"].inst}
+          facebook={team["Iliya Rochev"].facebook}
+          gmail={team["Iliya Rochev"].gmail}
+          telegram={team["Iliya Rochev"].telegram}
         />
       </section>
     </main>

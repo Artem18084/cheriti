@@ -3,6 +3,8 @@ import React from "react";
 import imgKiev from "../../../images/Journey/Kiev.jpg";
 import imgWood1 from "../../../images/Journey/wood1.jpg";
 import imgWood2 from "../../../images/Journey/wood2.jpg";
+import imgWood3 from "../../../images/Journey/wood3.jpg";
+import imgWood4 from "../../../images/Journey/wood4.jpg";
 import imgWoodRock from "../../../images/Journey/woodRock.jpg";
 import FirstArticleOnSection from "../firstArticleOnSection/FirstArticleOnSection";
 
@@ -23,7 +25,6 @@ export default function JourneySection() {
       />
 
       <article className="flex flex-col w-full items-center  pt-6 sm:pt-8 md:pt-12 lg:pt-16  xl:pt-20 ">
-        
         <p className="w-full md:px-12 lg:px-16 xl:px-20 pb-5">
           &nbsp; &nbsp;The main targets are civilians and critical
           infrastructure that ensures ordinary people are left without heat and
@@ -46,14 +47,10 @@ export default function JourneySection() {
         <div className="flex gap-1 w-full h-[25vw] [&>*]:inline whitespace-normal	overflow-x-auto  scrollbar-thin  md:scrollbar-thumb-gray-300">
           <img className="w-[50%] " src={imgWood1} alt="wood" />
           <img className="w-[50%] " src={imgWood2} alt="wood_done" />
-          <img className="w-[50%] " src={imgWood1} alt="wood" />
-          <img className="w-[50%] " src={imgWood1} alt="wood" />
-          <img className="w-[50%] " src={imgWood2} alt="wood_done" />
-          <img className="w-[50%] " src={imgWood1} alt="wood" />
-          <img className="w-[50%] " src={imgWood2} alt="wood_done" />
           <img className="w-[50%] " src={imgWoodRock} alt="wood_done_Rock" />
+          <img className="w-[50%] " src={imgWood3} alt="wood" />
+          <img className="w-[50%] " src={imgWood4} alt="wood" />
         </div>
-
       </article>
     </section>
   );

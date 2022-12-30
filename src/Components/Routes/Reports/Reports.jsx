@@ -22,7 +22,16 @@ import imgReport16 from "../../../images/Report/report16.jpg";
 import imgReport17 from "../../../images/Report/report17.jpg";
 import imgReport18 from "../../../images/Report/report18.jpg";
 import imgReport19 from "../../../images/Report/report19.jpg";
-
+import imgReport20 from "../../../images/Report/report20.JPG";
+import imgReport21 from "../../../images/Report/report21.JPG";
+import imgReport22 from "../../../images/Report/report22.JPG";
+import imgReport23 from "../../../images/Report/report23.JPG";
+import imgReport24 from "../../../images/Report/report24.JPG";
+import imgReport25 from "../../../images/Report/report25.JPG";
+import imgReport26 from "../../../images/Report/report26.JPG";
+import imgReport27 from "../../../images/Report/report27.JPG";
+import imgReport28 from "../../../images/Report/report28.JPG";
+import imgReport29 from "../../../images/Report/report29.jpg";
 
 import imgVertical from "../../../images/Report/verticalDots.png";
 import imgHorizontal from "../../../images/Report/horizontalDots.png";
@@ -37,7 +46,7 @@ export default function Reports() {
         width
           ? "px-[5vw] sm:px-[10vw]  md:px-[15vw] lg:px-[20vw] xl:px-[25rem]"
           : "px-[8vw]"
-      } py-[8rem] max-[1024px]:py-[6rem] max-[768px]:py-[4rem] w-full h-full bg-[#080a29]`}
+      } py-[8rem] max-[1024px]:py-[6rem] max-[768px]:py-[4rem] w-full h-full  bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900`}
     >
       <article className="flex items-baseline mb-7">
         <h2 className="text-4xl max-[1024px]:text-2xl max-[768px]:text-xl mr-2 max-[1024px]:mr-1 max-[768px]:mr-[2px] text-white">
@@ -68,8 +77,11 @@ export default function Reports() {
         } bg-white`}
       >
         <ReportItem setWidth={setWidth} src={imgReport1} alt="people" />{" "}
+        <ReportItem setWidth={setWidth} src={imgReport22} alt="child" />
         <ReportItem setWidth={setWidth} src={imgReport3} alt="people" />
+        <ReportItem setWidth={setWidth} src={imgReport20} alt="boy" />
         <ReportItem setWidth={setWidth} src={imgReport2} alt="van2" />
+        <ReportItem setWidth={setWidth} src={imgReport28} alt="girl" />
         <ReportItem setWidth={setWidth} src={imgReport4} alt="child" />
         <ReportItem setWidth={setWidth} src={imgReport5} alt="people" />
         <ReportItem setWidth={setWidth} src={imgReport9} alt="person" />
@@ -87,7 +99,13 @@ export default function Reports() {
         <ReportItem setWidth={setWidth} src={imgReport17} alt="people" />
         <ReportItem setWidth={setWidth} src={imgReport18} alt="people" />
         <ReportItem setWidth={setWidth} src={imgReport19} alt="food" />
-
+        <ReportItem setWidth={setWidth} src={imgReport21} alt="boy" />
+        <ReportItem setWidth={setWidth} src={imgReport29} alt="people" />
+        <ReportItem setWidth={setWidth} src={imgReport23} alt="van" />
+        <ReportItem setWidth={setWidth} src={imgReport24} alt="van" />
+        <ReportItem setWidth={setWidth} src={imgReport25} alt="people" />
+        <ReportItem setWidth={setWidth} src={imgReport26} alt="people" />
+        <ReportItem setWidth={setWidth} src={imgReport27} alt="people" />
       </section>
     </main>
   );

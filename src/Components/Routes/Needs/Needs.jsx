@@ -3,7 +3,7 @@ import React from "react";
 import imgFounder from "../../../images/Needs/founder.jpg";
 export default function Needs() {
   return (
-    <main className="w-full  flex flex-col  items-center  pt-[10vw] max-[768px]:pt-[20vw] max-[1024px]:pt-[15vw]  text-white bg-[#080a29]">
+    <main className="w-full  flex flex-col  items-center  pt-[10vw] max-[768px]:pt-[20vw] max-[1024px]:pt-[15vw]  text-white   bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 ">
       <section className=" w-full items-center  justify-around flex flex-row max-[768px]:flex-col ">
         <article className="flex flex-col items-center ">
           <h2 className="text-2xl max-[1024px]:text-sm">Founder of the fund</h2>
